@@ -1,0 +1,133 @@
+/* Variables de colores */
+:root {
+    --color-primario: #4A90E2;
+    --color-secundario: #50E3C2;
+    --color-fondo: #F5F7FA;
+    --color-texto: #333333;
+    --color-fondo-header: #FFFFFF;
+    --color-texto-header: #333333;
+    --color-boton-primario: #4A90E2;
+    --color-boton-secundario: #50E3C2;
+    --color-footer: #2C3E50;
+}
+
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
+
+header {
+    background-color: var(--color-fondo-header);
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: var(--color-texto-header);
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+#hero {
+    background-image: url('images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#hero .btn-primary {
+    background-color: var(--color-boton-primario);
+    padding: 10px 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#buscador {
+    padding: 50px 20px;
+    background-color: #FFFFFF;
+}
+
+footer {
+    background-color: var(--color-footer);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .footer-logo {
+    margin-bottom: 10px;
+}
+
+footer .footer-logo img {
+    width: 120px;
+    height: auto;
+}
+
+footer .footer-contact,
+footer .footer-social {
+    margin-bottom: 15px;
+}
+
+footer .footer-contact p,
+footer .footer-social a {
+    color: #FFFFFF;
+}
+
+footer .footer-social a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+footer .footer-social a:hover {
+    color: var(--color-secundario);
+}
+
+footer p {
+    margin-top: 10px;
+}
