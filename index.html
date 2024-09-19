@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inmobiliaria Creativa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Enlace a Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Inmobiliaria" class="logo-img"> <!-- Añadido logo -->
+                <h1>Inmobiliaria Creativa</h1>
+            </div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#propiedades">Propiedades</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Encuentra el hogar de tus sueños</h2>
+            <p>Con propiedades únicas y personalizadas para ti</p>
+            <a href="#propiedades" class="btn-primary">Ver Propiedades</a>
+        </div>
+    </section>
+
+    <section id="buscador">
+        <div class="buscador-container">
+            <h2>Buscar Propiedades</h2>
+            <form id="search-form">
+                <div class="form-group">
+                    <label for="tipo-transaccion">Tipo de Transacción:</label>
+                    <select id="tipo-transaccion" name="tipo-transaccion">
+                        <option value="venta">Venta</option>
+                        <option value="alquiler">Alquiler</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tipo-propiedad">Tipo de Propiedad:</label>
+                    <select id="tipo-propiedad" name="tipo-propiedad">
+                        <option value="casa">Casa</option>
+                        <option value="apartamento">Apartamento</option>
+                        <option value="terreno">Terreno</option>
+                        <option value="campo">Campo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="precio">Precio Máximo (USD):</label>
+                    <input type="number" id="precio" name="precio" placeholder="Ej. 500000">
+                </div>
+                <button type="submit" class="btn-primary">Buscar</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="propiedades">
+        <h2>Nuestras Propiedades Destacadas</h2>
+        <div class="grid" id="properties-grid">
+            <div class="property-card" data-transaccion="venta" data-tipo="casa" data-precio="500000">
+                <img src="images/property1.jpg" alt="Casa en la playa">
+                <h3>Casa en la Playa</h3>
+                <p>$500,000 USD</p>
+                <a href="#" class="btn-secondary">Ver Más</a>
+            </div>
+            <div class="property-card" data-transaccion="alquiler" data-tipo="apartamento" data-precio="350000">
+                <img src="images/property2.jpg" alt="Apartamento en el centro">
+                <h3>Apartamento en el Centro</h3>
+                <p>$350,000 USD</p>
+                <a href="#" class="btn-secondary">Ver Más</a>
+            </div>
+            <div class="property-card" data-transaccion="venta" data-tipo="villa" data-precio="1200000">
+                <img src="images/property3.jpg" alt="Villa de lujo">
+                <h3>Villa de Lujo</h3>
+                <p>$1,200,000 USD</p>
+                <a href="#" class="btn-secondary">Ver Más</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <i class="fas fa-search"></i>
+                <h3>Búsqueda Personalizada</h3>
+                <p>Te ayudamos a encontrar la propiedad perfecta acorde a tus necesidades.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-key"></i>
+                <h3>Compra y Venta</h3>
+                <p>Gestionamos la compra y venta de propiedades de manera eficiente y segura.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-user-shield"></i>
+                <h3>Asesoría Legal</h3>
+                <p>Nuestros expertos te asesoran en todo el proceso legal para tu tranquilidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="images/logo.png" alt="Logo Inmobiliaria" class="footer-logo-img"> <!-- Logo en el pie -->
+        </div>
+        <div class="footer-contact">
+            <h3>Contáctanos</h3>
+            <p><strong>Teléfono:</strong> +34 123 456 789</p>
+            <p><strong>Email:</strong> contacto@inmobiliariacreativa.com</p>
+            <p><strong>Dirección:</strong> Calle de los Sueños, 123, 28010, Madrid, España</p>
+            <p><strong>Localidad:</strong> Madrid, España</p>
+        </div>
+        <div class="footer-social">
+            <h3>Síguenos</h3>
+            <a href="https://www.facebook.com/inmobiliariacreativa" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/inmobiliariacreativa" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Inmobiliaria Creativa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
